@@ -1,6 +1,6 @@
 <html>
 <head>
-    <title> Belajar CS </title>
+    <title> Belajar CSS </title>
   </head>
     <body bgcolor="Cornsilk">
 	    <a href="https://dekaristi.github.io/"> Menu</a> 
@@ -32,7 +32,7 @@
 </head>
 <body>
  <div class="round">
- Hallo  Gess!
+ Hallo  Gess! いらしゃいませ
  </div>
  <br />
  <div class="round">
