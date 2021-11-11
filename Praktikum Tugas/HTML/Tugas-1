@@ -1,1 +1,50 @@
+<html>
+  <head>
+    <title> Tugas 1 </title>
+  </head>
+    <body bgcolor="Aqua">
+	    <a href="https://dekaristi.github.io/"> Menu</a> 
+	    <br> <h2> <b> Hallo ini tugas dengan tema menggunakan font bold </b> </h2>
+    <p> 
+    Saya kuliah di 
+    <b> Link target </b>
+    <a href="https://unipma.ac.id/"> Universitas PGRI Madiun </a>
+   <h2> Gambar </h2>
+   <br> 
+    <img src="/Praktikum Tugas/HTML/kucing2.jpeg" widht="300px" Height="200px"> 
+  
+   <br>  <b> List huruf kapital dari 6</b>
+<ol type="A" start="6">
+    <li>Huruf Keenam.</li>
+    <li>Huruf Ketuju.</li>
+		<li>Huruf Kedelapan.</li>
+		<li>Huruf Kesembilan.</li>
+		<li>Huruf Kesepuluh.</li>
+</ol>
 
+<h1>Belajar Tag Tabel</h1>
+<table border="1">
+ <tr>
+ <td>Baris 1, Kolom 1</td>
+ <td>Baris 1, Kolom 2</td>
+ <td>Baris 1, Kolom 3</td>
+ </tr>
+ <tr>
+ <td>Baris 2, Kolom 1</td>
+ <td>Baris 2, Kolom 2</td>
+ <td> Baris 2, Kolom 3</td>
+ </tr>
+ <tr>
+ <td> Baris 3, Kolom 1</td>
+ <td> Baris 3, Kolom 2</td>
+ <td> Baris 3, Kolom 3</td>
+ </tr>
+ <tr>
+ <td> Baris 4, Kolom 1</td>
+ <td> Baris 4, Kolom 2</td>
+ <td> Baris 4, Kolom 3</td>
+ </tr>
+</table>
+   
+  </body>
+</html>
