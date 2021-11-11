@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title> Tugas 3 </title>
+  </head>
+    <body bgcolor="Rosy Brown">
+	    <a href="https://Tiyasayu.github.io"> Menu</a> 
+	    <br> <h2> <u> Hallo ini tugas saya dengan Tema menggunakan garis bawah </> </h2>
+    <p> 
+    Saya kuliah di
+    <b> Link target </b>
+    <a href="https://unipma.ac.id/"> Universitas PGRI Madiun </a>
+   <h2> Gambar </h2>
+   
+   <img src="/Praktikum Tugas/HTML/kucing7.jpeg" widht="300px" Height="300px">     
+   <br>  <b> List huruf kapital dari 6</b>
+<ol type="a" start="6">
+    <li>Ibu</li>
+    <li>Ayah</li>
+		<li>Kakak1</li>
+		<li>Kakak2</li>
+		<li>Saya :)</li>
+</ol>
+
+<h2>Belajar Tag Tabel</h2>
+<table border="1">
+ <tr>
+ <td>Baris 1, Kolom 1</td>
+ <td>Baris 1, Kolom 2</td>
+ <td>Baris 1, Kolom 3</td>
+   <td> Baris 1, Kolom 4 </td> 
+ </tr>
+ <tr>
+ <td>Baris 2, Kolom 1</td>
+ <td>Baris 2, Kolom 2</td>
+ <td> Baris 2, Kolom 3</td>
+ </tr>
+
+</table>
+   
+  </body>
+</html>
