@@ -1,0 +1,170 @@
+<DOCTYPE html>
+	<html>
+	    <head>
+	       <title> Assalamu'alaikum Wr Wb. </title>
+		</head>
+		<body>
+		    <?php
+				$nama= "Dewi Santika Risti";
+				$nim = "1902106012";
+				$angka1 =15;
+				$angka2 =15;
+				
+				$hasilpenjumlahan = $angka1 + $angka2;
+				
+				echo "NAMA : " . $nama . "<br/>";
+				echo "NIM : " . $nim . "<br/>";
+				echo "Hasil Penjumlahan dari " . $angka1 . " dan " . $angka2 . " = " . $hasilpenjumlahan. "<br?>";
+			?>
+	<html>
+	    <head>
+		    <title> LATIHAN 6 PEMROGAMAN WEB </title>
+		</head>
+		<body>
+		    <form method="post">
+			   <table>
+			       <tr>
+				      <td>Nama</td>
+					  <td>:</td>
+					  <td><input type="semangat" name="Dewi Santika Risti"/></td>
+				   </tr>
+				   <tr>
+				      <td>Mata Kuliah</td>
+					  <td>:</td>
+					  <td>
+					     <select name="mk">
+						     <option value="">---- Pilih Mata Kuliah ----</option>
+                             <option value="Sistem Akuntansi">Algoritma & Struktur Data</option>
+							 <option value="Teori Akuntansi">Pemrogaman Terstruktur</option>
+							 <option value="Pemrogaman Web">Pemrogaman Web</option>
+							 <option value="Manajemen Biaya">Pemrogaman Berorientasi Objek</option>
+							 <option value="Manajemen Strategik">Algoritma & Struktur Data</option>
+						 </select>
+				   </td>
+				   </tr>
+				   <tr>
+				       <td>Jenis Kelamin</td>
+					   <td>:</td>
+					   <td>
+					      <input type="radio" name="jk" value="Laki-Laki"/>Laki-Laki<br/>
+						  <input type="radio" name="jk" value="Perempuan"/>Perempuan<br/>
+					   </td>
+				   </tr>
+				   <tr>
+				       <td>Email</td>
+					   <td>:</td>
+					   <td><input type="email" name="email"/></td>
+				   </tr>
+				   <tr align="center">
+				       <td colspan="3"><input type="submit" name="submit" value="simpan"/>&nbsp;
+					   <input type="Reset" name="Reset" value="Reset"/></td>
+				   </tr>
+				<table>
+		    </form>
+			<?php
+			    if(isset($_POST['submit'])){//pengecekan jika diproses tombol submit, maka bernilai true
+				    $nama = $_POST['nama'];//variabel untuk mengambil nilai dari textfield nama
+					$mk = $_POST['mk'];//variabel untuk mengambil nilai dari combobox mata kuliah 
+					$jk = $_POST['jk'];//variabel untuk mengambil nilai dari radio button jenis kelamin
+					$email = $_POST['email'];//variabel untuk mengambil nilai dari text email
+					
+					echo "INI OUTPUT SESUAI INPUTAN DARI FORM DIATAS <br/>";
+					echo "Nama : " . $nama;
+					echo "<br/>Mata Kuliah : " . $mk;
+					echo "<br/>Jenis Kelamin : ". $jk;
+					echo "<br/>Email : " . $email;
+				} 
+			?>
+	<html>
+	    <head>
+		    <title> LATIHAN 7 PEMROGAMAN WEB</title>
+		</head> 
+		<body>
+		    <form method="get">
+			   <table>
+			       <tr>
+				      <td>Nama</td>
+					  <td>:</td>
+					  <td><input type="text" name="name"/></td>
+					</tr>
+					<tr>
+					  <td>NIM</td>
+					  <td>:</td>
+					  <td><input type="text" name="nim"/></td>
+					</tr>
+					<tr align="center">
+					    <td colspan="3"><input type="submit" name="submit" value="simpan"/>&nbsp;
+						<input type="reset" name="reset" value="reset"/></td>
+					</tr>
+				</table>
+			</form>
+			<?php
+			    if(isset($_GET['submit'])){//pengecekan jika diproses tombol submit, maka bernilai true
+				   $nama = $_GET['nama'];//variabel untuk mengambil nilai dari URL nama
+				   $nim = $_GET['nim'];//variabel untuk mengambil nilai dari URL nim
+				   
+				   echo "<br/></br> INI OUTPUT SESUAI INPUTAN DARI FORM DIATAS <br/>";
+				   echo "Nama : " . $nama;
+				   echo "<br/>Nim : " . $nim;
+				}
+			?>
+	<html>
+	    <head>
+		    <title> LATIHAN 8 PEMROGAMAN WEB</title>
+		</head>
+		<body>
+		    <?php
+			    #cara pertama mendeklarasi array 1 dimensi
+				print ("CARA PERTAMA MENDEKLARASIKAN ARRAY 1 DIMENSI: <br/>");
+				$kota[0] = "Surabaya";
+				$kota[1] = "Malang";
+				$kota[2] = "Yogyakarta";
+                $kota[3] = "Madiun";
+				print ("Kota pilihanmu: $kota[3]");//print adalah cara lain mencetak selain echo
+				
+				echo "<br/><br/><br/>";
+				
+				#cara kedua mendeklarasikan array 2 dimensi
+				print ("CARA KEDUA MENDEKLARASIKAN ARRAY 2 DIMENSI: <br/>");
+				$kota2 = array(0=>"Jakarta", 1=>"Bandung", 2=>"Surakarta");
+				print ("Kota piihanmu: $kota2[1]");
+				
+				echo "<br/><br/><br/>";
+				
+				#cara ketiga mendeklarasikan array dengan nilai index berupa teks, bukan angka1
+				print ("CARA KETIGA MENDEKLARASIKAN ARRAY 1 DIMENSI: <br/>");
+				$inisialkota = array("JKT"=>"Jakarta", "BJN"=>"Bojonegoro", "MGL"=>"Magelang", "MDN"=>"Madiun");
+				echo "inisial MDN adalah kota: ".$inisialkota["MDN"]."";
+			?>
+	<html>
+	    <head>
+		    <title>LATIHAN 9 PEMROGAMAN WEB</title>
+		</head>
+		<body>
+		    <?php
+			    #cara pertama mendeklarasikan array multidimensi
+				print ("CARA PERTAMA MENDEKLARASIKAN ARRAY MULTIDIMENSI: <br/>");
+				$buah = array(
+				        "semangka"=> array("warna"=>"hijau", "rasa"=>"manis"),
+						"kurma"=>array("warna"=>"cokelat", "rasa"=>"manis"));
+				print "warna semangka adalah ";
+				print $buah["semangka"]["warna"]."<br/>";
+				print "warna kurma adalah ";
+				print $buah["kurma"]["warna"];
+				
+				echo "<br/><br/><br/>";
+				
+				#cara kedua mendeklarasikan array multidimensi
+				print ("CARA KEDUANMENDEKLARASIKAN ARRAY MULTIDIMENSI: <br/>");
+				$buah = array(
+				      array("semangka","hijau","manis"),
+					  array("kurma","cokelat","manis")
+				);
+				echo $buah[0][0]." warna: ".$buah[0][1]." rasa: ".$buah[0][2]."<br/>";
+				echo $buah[1][0]." warna: ".$buah[1][1]." rasa: ".$buah[1][2]."<br/>";
+			?>
+				
+		</body>
+	</html>
+	 
+	
